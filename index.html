@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - espesor de pavimento</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Diseño de Pavimentos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Diseño de Pavimentos</h1>
+        <form id="pavementForm">
+            <div class="form-group">
+                <label for="variable">Variable a Calcular:</label>
+                <select id="variable" name="variable" required>
+                    <option value="E">Espesor de Pavimento (E)</option>
+                    <option value="C">Carga (C)</option>
+                    <option value="M">Módulo de Ruptura (M)</option>
+                    <option value="R">Módulo de Reacción del Suelo (R)</option>
+                    <option value="A">Confiabilidad (A)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="E">Espesor de Pavimento (E):</label>
+                <input type="number" id="E" name="E">
+            </div>
+            <div class="form-group">
+                <label for="C">Carga (C):</label>
+                <input type="number" id="C" name="C">
+            </div>
+            <div class="form-group">
+                <label for="M">Módulo de Ruptura (M):</label>
+                <input type="number" id="M" name="M">
+            </div>
+            <div class="form-group">
+                <label for="R">Módulo de Reacción del Suelo (R):</label>
+                <input type="number" id="R" name="R">
+            </div>
+            <div class="form-group">
+                <label for="A">Confiabilidad (A):</label>
+                <input type="number" id="A" name="A">
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn">Calcular</button>
+                <button type="reset" id="resetButton" class="btn btn-reset">Restablecer</button>
+            </div>
+        </form>
+        <div id="parameter-graph" class="plot"></div>
+        <div id="result-graph" class="plot"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
